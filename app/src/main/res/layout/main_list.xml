@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainList">
+
+    <ImageView
+        android:id="@+id/fastfoodButton"
+        android:layout_width="207dp"
+        android:layout_height="0dp"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/dietfoodButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/healthButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fastfood" />
+
+    <ImageView
+        android:id="@+id/healthButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/serviceButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fastfoodButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/health" />
+
+    <ImageView
+        android:id="@+id/dietfoodButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fastfoodButton"
+        app:layout_constraintEnd_toStartOf="@+id/serviceButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fastfoodButton"
+        app:srcCompat="@drawable/dietfood" />
+
+    <ImageView
+        android:id="@+id/serviceButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dietfoodButton"
+        app:layout_constraintTop_toBottomOf="@+id/healthButton"
+        app:srcCompat="@drawable/service" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

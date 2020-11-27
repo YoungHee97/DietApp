@@ -19,8 +19,8 @@ public class Macdonald_list extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.macdonald_);
-        m_recyclerView = findViewById(R.id.m_recyclerView);
+        setContentView(R.layout.macdonald);
+        m_recyclerView = findViewById(R.id.k_recyclerView);
         macdonaldAdapter = new MacdonaldAdapter(macdonaldList);
         m_recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         m_recyclerView.setAdapter(macdonaldAdapter);

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.dietapp.FastFood.BurgerKing.King_list;
 import com.example.dietapp.FastFood.MacDonald.Macdonald_list;
 import com.example.dietapp.R;
 
@@ -24,11 +25,19 @@ public class FastfoodList extends AppCompatActivity {
         image4 = (ImageView) findViewById(R.id.pizzahut);
 
         final Intent intent = new Intent(this, Macdonald_list.class);
+        final Intent intent2 = new Intent(this, King_list.class);
 
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(intent);
+            }
+        });
+
+        image2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent2);
             }
         });
     }

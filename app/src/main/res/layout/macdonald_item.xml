@@ -18,14 +18,14 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/m_burger"
+                android:id="@+id/k_burger"
                 android:layout_width="match_parent"
                 android:layout_height="278dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/bigmack" />
 
             <TextView
-                android:id="@+id/m_name"
+                android:id="@+id/k_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#423A3A"
@@ -35,7 +35,7 @@
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/m_calorie"
+                android:id="@+id/k_calorie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#8BC34A"
@@ -45,7 +45,7 @@
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/m_ex"
+                android:id="@+id/k_ex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView"

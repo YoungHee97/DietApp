@@ -3,7 +3,6 @@ package com.example.dietapp.FastFood.MacDonald;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -48,10 +47,10 @@ public class MacdonaldAdapter extends RecyclerView.Adapter<MacdonaldAdapter.MyVi
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            m_burger = itemView.findViewById(R.id.m_burger);
-            m_name = itemView.findViewById(R.id.m_name);
-            m_calorie = itemView.findViewById(R.id.m_calorie);
-            m_ex = itemView.findViewById(R.id.m_ex);
+            m_burger = itemView.findViewById(R.id.k_burger);
+            m_name = itemView.findViewById(R.id.k_name);
+            m_calorie = itemView.findViewById(R.id.k_calorie);
+            m_ex = itemView.findViewById(R.id.k_ex);
         }
     }
 }

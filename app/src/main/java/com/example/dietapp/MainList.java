@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 import com.example.dietapp.DietFood.Diet_list;
 import com.example.dietapp.FastFood.FastfoodList;
+import com.example.dietapp.Health.HeathList;
+import com.example.dietapp.Service.ServiceMain;
 
 public class MainList extends AppCompatActivity {
     ImageView image, image2, image3, image4;
@@ -24,8 +26,9 @@ public class MainList extends AppCompatActivity {
         image4 = (ImageView) findViewById(R.id.serviceButton);
 
         final Intent intent = new Intent(this, FastfoodList.class);
-        //final Intent intent2 = new Intent(this,);
+        final Intent intent2 = new Intent(this, HeathList.class);
         final Intent intent3 = new Intent(this, Diet_list.class);
+        final Intent intent4 = new Intent(this, ServiceMain.class);
 
         image.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -34,10 +37,24 @@ public class MainList extends AppCompatActivity {
             }
         });
 
+        image2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent2);
+            }
+        });
+
         image3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 startActivity(intent3);
+            }
+        });
+
+        image4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent4);
             }
         });
 

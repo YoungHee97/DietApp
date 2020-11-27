@@ -8,7 +8,7 @@
     tools:context=".FastFood.MacDonald.Macdonald_list">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/m_recyclerView"
+        android:id="@+id/k_recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

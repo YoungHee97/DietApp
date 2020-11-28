@@ -16,29 +16,8 @@ import java.util.List;
 
 public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHolder> {
 
-    private ArrayList<Board> arrayList;
+    private List<Board> boards;
     private Context context;
-
-    public BoardAdapter(ArrayList<Board> arrayList, Context context){
-        this.arrayList = arrayList;
-        this.context = context;
-    }
-
-    @NonNull
-    @Override
-    public BoardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull BoardViewHolder holder, int position) {
-
-    }
-
-    @Override
-    public int getItemCount() {
-        return arrayList.size();
-    }
 
     public class BoardViewHolder extends RecyclerView.ViewHolder {
         public ImageView p_user;
@@ -52,5 +31,31 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
             this.b_content = itemView.findViewById(R.id.b_content);
         }
     }
+
+    public BoardAdapter(Context context, List<Board> boards){
+        this.context = context;
+        this.boards = boards;
+    }
+
+    @NonNull
+    @Override
+    public BoardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull BoardViewHolder holder, int position) {
+        Board board = boards.get(position);
+        holder.user.setText(board.getUser());
+        holder.b_title.setText(board.getTitle());
+        holder.b_content.setText(board.getContent());
+    }
+
+    @Override
+    public int getItemCount() {
+        return boards.size();
+    }
+
+
 
 }

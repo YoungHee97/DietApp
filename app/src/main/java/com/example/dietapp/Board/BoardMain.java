@@ -25,8 +25,8 @@ import java.util.List;
 public class BoardMain extends AppCompatActivity {
    private RecyclerView recyclerView;
    private BoardAdapter adapter;
+   private List<Board> boards = new ArrayList<>();
    private RecyclerView.LayoutManager layoutManager;
-   private ArrayList<Board> arrayList;
    private FirebaseDatabase database;
    private DatabaseReference reference;
 
@@ -37,19 +37,20 @@ public class BoardMain extends AppCompatActivity {
 
        recyclerView = findViewById(R.id.b_recyclerview);
        recyclerView.setHasFixedSize(true);
+       adapter = new BoardAdapter(this, boards);
        layoutManager = new LinearLayoutManager(getApplicationContext());
        recyclerView.setLayoutManager(layoutManager);
-       arrayList = new ArrayList<>();
+
 
        database = FirebaseDatabase.getInstance();
        reference = database.getReference("board");
        reference.addListenerForSingleValueEvent(new ValueEventListener() {
           @Override
           public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-             arrayList.clear();
+             boards.clear();
              for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                 Board Board = snapshot.getValue(Board.class);
-                arrayList.add(Board);
+                boards.add(Board);
              }
              adapter.notifyDataSetChanged();
           }

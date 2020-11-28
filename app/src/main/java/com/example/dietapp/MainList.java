@@ -9,8 +9,8 @@ import android.widget.ImageView;
 
 import com.example.dietapp.DietFood.Diet_list;
 import com.example.dietapp.FastFood.FastfoodList;
-import com.example.dietapp.Health.HeathList;
-import com.example.dietapp.Service.ServiceMain;
+import com.example.dietapp.Health.HealthList;
+import com.example.dietapp.Board.BoardMain;
 
 public class MainList extends AppCompatActivity {
     ImageView image, image2, image3, image4;
@@ -26,9 +26,9 @@ public class MainList extends AppCompatActivity {
         image4 = (ImageView) findViewById(R.id.serviceButton);
 
         final Intent intent = new Intent(this, FastfoodList.class);
-        final Intent intent2 = new Intent(this, HeathList.class);
+        final Intent intent2 = new Intent(this, HealthList.class);
         final Intent intent3 = new Intent(this, Diet_list.class);
-        final Intent intent4 = new Intent(this, ServiceMain.class);
+        final Intent intent4 = new Intent(this, BoardMain.class);
 
         image.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -59,4 +59,5 @@ public class MainList extends AppCompatActivity {
         });
 
     }
+
 }

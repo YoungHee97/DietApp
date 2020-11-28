@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Health.HeathList">
+    tools:context=".Health.HealthList">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/h_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

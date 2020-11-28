@@ -48,9 +48,9 @@ public class DietAdapter extends RecyclerView.Adapter<DietAdapter.MyViewHolder> 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tour_picture = itemView.findViewById(R.id.dfood_picture);
-            name = itemView.findViewById(R.id.name2);
-            explanation = itemView.findViewById(R.id.explanation);
-            tno = itemView.findViewById(R.id.tno);
+            name = itemView.findViewById(R.id.h_title);
+            explanation = itemView.findViewById(R.id.h_ex);
+            tno = itemView.findViewById(R.id.hno);
         }
 
     }

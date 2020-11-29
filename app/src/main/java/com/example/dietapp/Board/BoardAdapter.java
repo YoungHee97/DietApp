@@ -1,6 +1,7 @@
 package com.example.dietapp.Board;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -40,7 +41,9 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
     @NonNull
     @Override
     public BoardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.board_list,parent,false);
+
+        return new BoardViewHolder(itemView);
     }
 
     @Override
@@ -55,7 +58,5 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
     public int getItemCount() {
         return boards.size();
     }
-
-
 
 }

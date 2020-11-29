@@ -1,34 +1,63 @@
 {
   "project_info": {
-    "project_number": "201932419563",
-    "firebase_url": "https://dietapp-f4826.firebaseio.com",
-    "project_id": "dietapp-f4826",
-    "storage_bucket": "dietapp-f4826.appspot.com"
+    "project_number": "424055053056",
+    "firebase_url": "https://final-30318.firebaseio.com",
+    "project_id": "final-30318",
+    "storage_bucket": "final-30318.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:201932419563:android:861cadaec43f8eeca0e9ae",
+        "mobilesdk_app_id": "1:424055053056:android:00fd9031b2845482d2b1e5",
         "android_client_info": {
-          "package_name": "com.example.dietapp"
+          "package_name": "com.example.diet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "201932419563-4t7ljahnsfk8id53gt7884rlno15logt.apps.googleusercontent.com",
+          "client_id": "424055053056-3bf9k8h3v0ru82030s66sfbja2vsi84o.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCrv59lriWGVpS0mzLYVbHxvXVSZVBzlik"
+          "current_key": "AIzaSyDY6npOS-zUWyg79E5T-oGKlxYbME6B17I"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "201932419563-4t7ljahnsfk8id53gt7884rlno15logt.apps.googleusercontent.com",
+              "client_id": "424055053056-3bf9k8h3v0ru82030s66sfbja2vsi84o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424055053056:android:b114cd2df7c6c4a9d2b1e5",
+        "android_client_info": {
+          "package_name": "com.example.dietapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424055053056-3bf9k8h3v0ru82030s66sfbja2vsi84o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY6npOS-zUWyg79E5T-oGKlxYbME6B17I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424055053056-3bf9k8h3v0ru82030s66sfbja2vsi84o.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

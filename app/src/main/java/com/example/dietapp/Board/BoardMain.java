@@ -21,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class BoardMain extends AppCompatActivity {
@@ -38,10 +39,6 @@ public class BoardMain extends AppCompatActivity {
 
       recyclerView = findViewById(R.id.b_recyclerview);
       recyclerView.setHasFixedSize(true);
-      /*adapter = new BoardAdapter(this, boards);
-      RecyclerView.LayoutManager manager = new LinearLayoutManager(getApplicationContext());
-      recyclerView.setLayoutManager(manager);
-      recyclerView.setAdapter(adapter);*/
 
       layoutManager = new LinearLayoutManager(getApplicationContext());
       recyclerView.setLayoutManager(layoutManager);

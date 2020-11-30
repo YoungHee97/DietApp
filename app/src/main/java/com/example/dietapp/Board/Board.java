@@ -7,11 +7,11 @@ public class Board {
 
     Board(){}
 
-    Board(String user, String b_title, String b_content){
+   /*Board(String user, String b_title, String b_content){
         this.user = user;
         this.b_title = b_title;
         this.b_content = b_content;
-    }
+    }*/
 
     public String getUser() {
         return user;
@@ -21,19 +21,19 @@ public class Board {
         this.user = user;
     }
 
-    public String getTitle() {
+    public String getB_title() {
         return b_title;
     }
 
-    public void setTitle(String b_title) {
+    public void setB_title(String b_title) {
         this.b_title = b_title;
     }
 
-    public String getContent() {
+    public String getB_content() {
         return b_content;
     }
 
-    public void setContent(String b_content) {
+    public void setB_content(String b_content) {
         this.b_content = b_content;
     }
 }

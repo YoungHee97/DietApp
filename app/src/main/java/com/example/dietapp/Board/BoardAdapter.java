@@ -11,10 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.dietapp.R;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHolder> {
@@ -52,8 +49,8 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.BoardViewHol
     public void onBindViewHolder(@NonNull BoardViewHolder holder, int position) {
         Board board = boards.get(position);
         holder.user.setText(board.getUser());
-        holder.b_title.setText(board.getTitle());
-        holder.b_content.setText(board.getContent());
+        holder.b_title.setText(board.getB_title());
+        holder.b_content.setText(board.getB_content());
     }
 
     @Override

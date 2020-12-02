@@ -47,10 +47,10 @@ public class KingAdapter extends RecyclerView.Adapter<KingAdapter.MyViewHolder>{
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            k_burger = itemView.findViewById(R.id.k_burger);
-            k_name = itemView.findViewById(R.id.k_name);
-            k_calorie = itemView.findViewById(R.id.k_calorie);
-            k_ex = itemView.findViewById(R.id.k_ex);
+            k_burger = itemView.findViewById(R.id.d_donut);
+            k_name = itemView.findViewById(R.id.d_name);
+            k_calorie = itemView.findViewById(R.id.d_calorie);
+            k_ex = itemView.findViewById(R.id.d_ex);
         }
     }
 }

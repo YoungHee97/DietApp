@@ -12,12 +12,13 @@
         android:layout_height="0dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="143dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="29dp"
         android:scaleType="fitCenter"
         android:src="@drawable/macdonald"
-        app:layout_constraintBottom_toTopOf="@+id/dunkin"
-        app:layout_constraintEnd_toStartOf="@+id/burgerking"
+        app:layout_constraintBottom_toTopOf="@+id/burgerking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,40 +26,14 @@
         android:id="@+id/burgerking"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="143dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="11dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/burgerking"
-        app:layout_constraintBottom_toTopOf="@+id/pizzahut"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/mcdonald"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/dunkin"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
         android:layout_marginStart="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="185dp"
-        android:src="@drawable/dunkin"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="149dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/burgerking"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/pizzahut"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mcdonald" />
-
-    <ImageView
-        android:id="@+id/pizzahut"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="185dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/pizzahut"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dunkin"
-        app:layout_constraintTop_toBottomOf="@+id/burgerking" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

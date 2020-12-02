@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DietApp">
-        <activity android:name=".FastFood.BurgerKing.King_list"></activity>
+        <activity android:name=".FastFood.Dunkin.Dunkin_list"></activity>
+        <activity android:name=".FastFood.BurgerKing.King_list" />
         <activity android:name=".Health.HealthList" />
         <activity android:name=".Board.BoardMain" />
         <activity android:name=".DietFood.Diet_list" />

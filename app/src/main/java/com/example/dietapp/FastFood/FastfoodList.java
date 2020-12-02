@@ -21,8 +21,6 @@ public class FastfoodList extends AppCompatActivity {
 
         image = (ImageView) findViewById(R.id.mcdonald);
         image2 = (ImageView) findViewById(R.id.burgerking);
-        image3 = (ImageView) findViewById(R.id.dunkin);
-        image4 = (ImageView) findViewById(R.id.pizzahut);
 
         final Intent intent = new Intent(this, Macdonald_list.class);
         final Intent intent2 = new Intent(this, King_list.class);

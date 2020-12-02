@@ -47,10 +47,10 @@ public class MacdonaldAdapter extends RecyclerView.Adapter<MacdonaldAdapter.MyVi
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            m_burger = itemView.findViewById(R.id.k_burger);
-            m_name = itemView.findViewById(R.id.k_name);
-            m_calorie = itemView.findViewById(R.id.k_calorie);
-            m_ex = itemView.findViewById(R.id.k_ex);
+            m_burger = itemView.findViewById(R.id.d_donut);
+            m_name = itemView.findViewById(R.id.d_name);
+            m_calorie = itemView.findViewById(R.id.d_calorie);
+            m_ex = itemView.findViewById(R.id.d_ex);
         }
     }
 }

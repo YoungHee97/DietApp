@@ -41,7 +41,6 @@ public class BoardMain extends AppCompatActivity {
    private RecyclerView.LayoutManager layoutManager;
    private FirebaseDatabase database;
    private DatabaseReference reference;
-   private static final String REQUIRED = "Required";
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
@@ -174,7 +173,8 @@ public class BoardMain extends AppCompatActivity {
       childupdates.put("/board/",boardValue);
       reference.updateChildren(childupdates);
 
-      //reference.updateChildren(boardValue);
    }
+
+
 
 }
